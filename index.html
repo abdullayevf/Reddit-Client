@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit Client</title>
+    <meta
+      name="description"
+      content="A simple Reddit client built with HTML, CSS and Javascript."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <!-- <div class="lane">
+          <header class="lane-header">
+            <h2>/r/learnprogramming</h2>
+            <button type="button">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </header>
+          <main class="lane-content">
+            <ul>
+              <li class="post">
+                <span class="post-upvotes">
+                  <i class="fas fa-caret-up"></i>
+                  <span>1.2k</span>
+                </span>
+                <span class="post-title">
+                  <a href="#">How to learn Js?</a>
+                </span>
+              </li>
+              <li class="post">
+                <span class="post-upvotes">
+                  <i class="fas fa-caret-up"></i>
+                  <span>1.2k</span>
+                </span>
+                <span class="post-title">
+                  <a href="#">How to learn Js?</a>
+                </span>
+              </li>
+              <li class="post">
+                <span class="post-upvotes">
+                  <i class="fas fa-caret-up"></i>
+                  <span>1.2k</span>
+                </span>
+                <span class="post-title">
+                  <a href="#">How to learn Js?</a>
+                </span>
+              </li>
+            </ul>
+          </main>
+        </div>
+
+        <div class="lane">
+          <header class="lane-header">
+            <h2>/r/learnprogramming</h2>
+            <button type="button">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </header>
+          <main class="lane-content">
+            <ul>
+              <li class="post">
+                <span class="post-upvotes">
+                  <i class="fas fa-caret-up"></i>
+                  <span>1.2k</span>
+                </span>
+                <span class="post-title">
+                  <a href="#">How to learn Js?</a>
+                </span>
+              </li>
+              <li class="post">
+                <span class="post-upvotes">
+                  <i class="fas fa-caret-up"></i>
+                  <span>1.2k</span>
+                </span>
+                <span class="post-title">
+                  <a href="#">How to learn Js?</a>
+                </span>
+              </li>
+              <li class="post">
+                <span class="post-upvotes">
+                  <i class="fas fa-caret-up"></i>
+                  <span>1.2k</span>
+                </span>
+                <span class="post-title">
+                  <a href="#">How to learn Js?</a>
+                </span>
+              </li>
+            </ul>
+          </main>
+        </div> -->
+        <div class="free-space">
+          <button type="button" class="popup-trigger" id="popup-trigger">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="popup" id="popup">
+            <form>
+              <label for="subreddit-name"></label>
+              <input
+                type="text"
+                id="subreddit-name"
+                name="subreddit-name"
+                placeholder="Enter subreddit name"
+                required
+              />
+              <button type="submit" class="btn">Add Subreddit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
