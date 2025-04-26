@@ -19,7 +19,7 @@ a {
 
 .wrapper {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   border: 2px solid black;
   border-radius: 0.6rem;
   overflow-x: auto;
@@ -54,6 +54,31 @@ a {
   transition: all 0.3s ease;
   border: none;
   background: none;
+  position: relative;
+}
+
+.lane-menu {
+  display: none;
+  position: absolute;
+  background-color:white;
+  border: 2px solid black;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  top: 2rem;
+  right: 0;
+}
+
+.lane-menu input {
+  cursor: pointer;
+  padding: 0.6rem 1.8rem;
+  display: block;
+  width: 100%;
+  background: white;
+  border:none;
+}
+
+#delete-button {
+  border-top: 2px solid black;
 }
 
 .lane-content .post {
@@ -62,6 +87,12 @@ a {
   justify-content: start;
   border-bottom: 2px solid black;
   padding: 0.4rem 1rem;
+}
+
+.post-title {
+  display: block;
+  line-height: normal;
+  flex-wrap: wrap;
 }
 
 .post .post-upvotes {
