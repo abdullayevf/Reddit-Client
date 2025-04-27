@@ -49,6 +49,7 @@ async function fetchSubredditData(subreddit) {
       return {
         title: post.data.title,
         upvotes: post.data.ups,
+        link: post.data.url,
       };
     });
 
@@ -69,12 +70,12 @@ function renderPosts(subreddit, posts) {
   lane.innerHTML += `
     <header class="lane-header">
             <h2>/r/${subreddit}</h2>
-            <button type="button" id="lane-menu-trigger">
+            <button type="button" class="lane-menu-trigger">
               <i class="fas fa-ellipsis-v"></i>
 
-              <div class="lane-menu" id="lane-menu">
-                <input type="button" id="refresh-button" value="Refresh"></input>
-                <input type="button" id="delete-button" value="Delete"></input>
+              <div class="lane-menu" class="lane-menu">
+                <input type="button" class="refresh-button" value="Refresh"></input>
+                <input type="button" class="delete-button" value="Delete"></input>
               </div>
 
             </button>
@@ -86,7 +87,7 @@ function renderPosts(subreddit, posts) {
 
   content.classList.add("lane-content");
 
-  posts.forEach((p) => {
+  posts.splice(0, 10).forEach((p) => {
     let post = document.createElement("li");
     post.classList.add("post");
     post.innerHTML = `
@@ -95,7 +96,7 @@ function renderPosts(subreddit, posts) {
                   <span>${p.upvotes}</span>
                 </span>
                 <span class="post-title">
-                  <a href="#">${p.title}</a>
+                  <a href="${p.link}" target="_blank">${p.title}</a>
                 </span>
     `;
 

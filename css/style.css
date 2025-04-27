@@ -4,7 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -60,7 +60,7 @@ a {
 .lane-menu {
   display: none;
   position: absolute;
-  background-color:white;
+  background-color: white;
   border: 2px solid black;
   border-radius: 0.6rem;
   overflow: hidden;
@@ -74,7 +74,7 @@ a {
   display: block;
   width: 100%;
   background: white;
-  border:none;
+  border: none;
 }
 
 #delete-button {
@@ -91,8 +91,7 @@ a {
 
 .post-title {
   display: block;
-  line-height: normal;
-  flex-wrap: wrap;
+  margin-left: 1rem;
 }
 
 .post .post-upvotes {
@@ -103,11 +102,6 @@ a {
   font-size: 0.8rem;
   margin-top: 0.4rem;
   bottom: 0.3rem;
-}
-
-.post .post-title {
-  margin-left: 1rem;
-  line-height: 0px;
 }
 
 .free-space {
